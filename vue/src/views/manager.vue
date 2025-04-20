@@ -16,7 +16,7 @@
     <div style="display: flex">
       <!--菜单区域开始-->
       <div style="width:240px">
-        <el-menu :default-openeds="['1']" default-active="/manager/home" style="min-height: calc(100vh-60px">
+        <el-menu :default-openeds="['1']" default-active="/manager/home" style="min-height: calc(100vh - 60px">
           <el-menu-item index="/manager/home">
             <el-icon><House /></el-icon>
             <span>首页</span>
