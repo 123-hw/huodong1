@@ -4,9 +4,13 @@ import App from './App.vue'
 import router from './router'
 import './assets/css/global.css'
 import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
-
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+
+import 'element-plus/dist/index.css'
+//  // 路径根据实际调整
+
+
+
 const app = createApp(App)
 app.use(ElementPlus)
 app.use(router)

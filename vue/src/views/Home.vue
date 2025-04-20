@@ -5,8 +5,8 @@
     <el-button>Default</el-button>
     <el-button type="primary">当前活动</el-button>
     <el-button type="success">活动提交</el-button>
-    <el-button type="info" style="background-color: blueviolet">审核状态</el-button>
-    <el-button type="info" style="background-color: blueviolet">审核状态</el-button>
+    <el-button type="info">审核状态</el-button>
+
     <el-button type="warning">Warning</el-button>
     <el-button type="danger">Danger</el-button>
 

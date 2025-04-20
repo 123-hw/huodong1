@@ -20,13 +20,15 @@ Components({
   resolvers:[
     ElementPlusResolver({importStyle:"sass"})
   ],
-
-
 }),
   ],
   css:{
-    prepro
-  }
+    preprocessorOptions: {
+      scss:{
+        additionalData: '@use "@/assets/css/index.scss" as *;',
+      },
+    },
+  },
 
   resolve: {
     alias: {
