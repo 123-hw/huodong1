@@ -1,8 +1,8 @@
 <template>
   <div>
     <!--头部区域开始-->
-    <div style="height: 60px; border-bottom: 1px solid #eee;display: flex;align-items: center">
-      <div style="display:flex;align-items: center;padding-left: 20px">
+    <div style="height: 60px;display: flex;">
+      <div style="width:240px; display:flex;align-items: center;padding-left: 20px;background-color:#3a456b">
         <!--放logo-->
         <span style="font-size: 20px;font-weight: bold;color:#42cc2d;margin-left: 5px">学生活动管理系统</span>
       </div>
@@ -15,7 +15,7 @@
     <!--下方区域开始-->
     <div style="display: flex">
       <!--菜单区域开始-->
-      <div style="width:240px">
+      <div style="width:240px;">
         <el-menu :default-openeds="['1']" default-active="/manager/home" style="min-height: calc(100vh - 60px">
           <el-menu-item index="/manager/home">
             <el-icon><House /></el-icon>
@@ -43,3 +43,6 @@
 <script setup>
 
 </script>
+<style>
+
+</style>
