@@ -32,6 +32,7 @@
 
 <script setup>
 import {reactive} from "vue";
+import axios from "axios";
 
 const data=reactive({
   name:null,
@@ -39,12 +40,20 @@ const data=reactive({
   pageSize:5,
   total:6,
   tableData:[
-    {name:'黄惟' , phone:'11111111111' , address:'湘潭大学'},
-    {name:'黄惟' , phone:'11111111111' , address:'湘潭大学'},
-    {name:'黄惟' , phone:'11111111111' , address:'湘潭大学'},
-    {name:'黄惟' , phone:'11111111111' , address:'湘潭大学'},
-    {name:'黄惟' , phone:'11111111111' , address:'湘潭大学'},
-    {name:'黄惟' , phone:'11111111111' , address:'湘潭大学'},
+    {name:'和没有' , phone:'11111111111' , address:'湘潭大学'},
+    {name:'和没有' , phone:'11111111111' , address:'湘潭大学'},
+    {name:'和没有' , phone:'11111111111' , address:'湘潭大学'},
+    {name:'和没有' , phone:'11111111111' , address:'湘潭大学'},
+    {name:'和没有' , phone:'11111111111' , address:'湘潭大学'},
+    {name:'和没有' , phone:'11111111111' , address:'湘潭大学'},
   ]
+})
+axios.get('http://localhost:9999/admin/selectAll').then(res =>{
+  if(res.code!==200){
+//错误提示
+  }else {
+    //console.log(res)
+    console.log(res.data.data)
+  }
 })
 </script>
