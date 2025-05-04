@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df180f61-df55-4807-945d-5493ee2da8d0" name="更改" comment="主页跳转">
+    <list default="true" id="df180f61-df55-4807-945d-5493ee2da8d0" name="更改" comment="5.20使用request工具发起请求">
+      <change afterPath="$PROJECT_DIR$/vue/src/views/Admin.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/example/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/example/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/com/example/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/com/example/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/com/example/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/com/example/service/AdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/manager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/manager.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +143,7 @@
       <workItem from="1746096154084" duration="4288000" />
       <workItem from="1746361298804" duration="1729000" />
       <workItem from="1746363242159" duration="301000" />
-      <workItem from="1746363566755" duration="1856000" />
+      <workItem from="1746363566755" duration="4193000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <option name="closed" value="true" />
@@ -185,7 +193,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746363389738</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="5.20使用request工具发起请求">
+      <option name="closed" value="true" />
+      <created>1746365642796</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746365642796</updated>
+    </task>
+    <task id="LOCAL-00008" summary="5.20使用request工具发起请求">
+      <option name="closed" value="true" />
+      <created>1746365683772</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746365683772</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +231,7 @@
     <MESSAGE value="try" />
     <MESSAGE value="改布局" />
     <MESSAGE value="主页跳转" />
-    <option name="LAST_COMMIT_MESSAGE" value="主页跳转" />
+    <MESSAGE value="5.20使用request工具发起请求" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.20使用request工具发起请求" />
   </component>
 </project>
