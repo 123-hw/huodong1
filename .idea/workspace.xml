@@ -5,30 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df180f61-df55-4807-945d-5493ee2da8d0" name="更改" comment="主页跳转">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/common/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/code2025.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/code2025.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/@element-plus_icons-vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/@element-plus_icons-vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_base_style_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_base_style_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_button_style_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_button_style_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_button_style_index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_button_style_index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_icon_style_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_icon_style_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_input_style_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_input_style_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_input_style_index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_input_style_index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue-router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue-router.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +85,7 @@
       <recent name="D:\小白做毕设\代码\code2025\vue\src\assets\css" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="Spring Boot.SpringbootApplication">
     <configuration name="SpringbootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="springboot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.SpringbootApplication" />
@@ -157,6 +134,8 @@
       <workItem from="1746093935010" duration="2187000" />
       <workItem from="1746096154084" duration="4288000" />
       <workItem from="1746361298804" duration="1729000" />
+      <workItem from="1746363242159" duration="301000" />
+      <workItem from="1746363566755" duration="1856000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <option name="closed" value="true" />
@@ -198,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745155873381</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="主页跳转">
+      <option name="closed" value="true" />
+      <created>1746363389738</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746363389738</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +206,7 @@
     <MESSAGE value="11" />
     <MESSAGE value="try" />
     <MESSAGE value="改布局" />
-    <option name="LAST_COMMIT_MESSAGE" value="改布局" />
+    <MESSAGE value="主页跳转" />
+    <option name="LAST_COMMIT_MESSAGE" value="主页跳转" />
   </component>
 </project>

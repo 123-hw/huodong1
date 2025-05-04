@@ -32,7 +32,9 @@
 
 <script setup>
 import {reactive} from "vue";
-import axios from "axios";
+import {Search} from "@element-plus/icons-vue";
+import request from "@/utils/request.js";
+import {ElMessage} from "element-plus";
 
 const data=reactive({
   name:null,
@@ -48,12 +50,11 @@ const data=reactive({
     {name:'和没有' , phone:'11111111111' , address:'湘潭大学'},
   ]
 })
-axios.get('http://localhost:9999/admin/selectAll').then(res =>{
-  if(res.code!==200){
-//错误提示
-  }else {
-    //console.log(res)
-    console.log(res.data.data)
+request.get('/admin/selectAll').then(res => {
+  if(res.code === '200'){
+    console.log(res)
+  }else{
+    ElMessage.error(res.msg)
   }
 })
 </script>
