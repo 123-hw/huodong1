@@ -14,8 +14,8 @@ import java.util.List;
 public class AdminService {
     @Resource
     AdminMapper adminMapper;
-    public String admin(String username) {
-        if (username.equals("admin") ) {
+    public String admin(String name) {
+        if ("admin".equals(name) ) {
             return "admin";
         }else {
             throw new CustomerException("账号错误");
