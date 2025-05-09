@@ -7,19 +7,26 @@
       <el-button @click="reset">重 置</el-button>
     </div>
     <div class="card" style="margin-bottom: 5px">
-      <el-button type="danger">批量删除</el-button>
-      <el-button type="primary">新 增</el-button>
+      <el-button type="primary"@click="handleAdd">新 增</el-button>
+      <el-button type="danger"@click="deleteBatch">批量删除</el-button>
       <el-button type="success">批量导入</el-button>
       <el-button type="info">批量导出</el-button>
     </div>
 
     <div class="card" style="margin-bottom: 5px">
-      <el-table :data="data.tableData" style="width: 100%" :header-cell-style="{ color: '#333', backgroundColor: '#eaf4ff' }">
+      <el-table :data="data.tableData" style="width: 100%"  @selection-change="handleSelectionChange"
+                :header-cell-style="{ color: '#333', backgroundColor: '#eaf4ff' }">
         <el-table-column type="selection" width="55" />
         <el-table-column prop="username" label="账号" />
         <el-table-column prop="name" label="名称" />
         <el-table-column prop="phone" label="电话" />
         <el-table-column prop="email" label="邮箱" />
+        <el-table-column label="操作"  width="100">
+          <template #default="scope">
+            <el-button type="primary" icon="Edit" circle @click="handleEdit(scope.row)"></el-button>
+            <el-button type="danger" icon="Delete" circle @click="del(scope.row.id)"></el-button>
+          </template>
+        </el-table-column>
       </el-table>
     </div>
     <div class="card">
@@ -33,14 +40,36 @@
           @size-change="load"
       />
     </div>
+    <el-dialog title="管理员信息" v-model="data.formVisible" width="30%" destroy-on-close>
+      <el-form ref="formRef" :model="data.form":rules="data.rules" label-width="80px" style="padding: 20px 30px 10px 0">
+        <el-form-item label="账号" prop="username">
+          <el-input v-model="data.form.username" autocomplete="off" />
+        </el-form-item>
+        <el-form-item label="名称" prop="name">
+          <el-input v-model="data.form.name" autocomplete="off" />
+        </el-form-item>
+        <el-form-item label="电话" prop="phone">
+          <el-input v-model="data.form.phone" autocomplete="off" />
+        </el-form-item>
+        <el-form-item label="邮箱" prop="email">
+          <el-input v-model="data.form.email" autocomplete="off" />
+        </el-form-item>
+      </el-form>
+      <template #footer>
+        <div class="dialog-footer">
+          <el-button @click="data.formVisible = false">取 消</el-button>
+          <el-button type="primary" @click="save">保 存</el-button>
+        </div>
+      </template>
+    </el-dialog>
   </div>
 </template>
 
 <script setup>
-import { reactive } from "vue";
+import { reactive ,ref} from "vue";
 import {Search} from "@element-plus/icons-vue";
 import request from "@/utils/request.js";
-import {ElMessage} from "element-plus";
+import {ElMessage, ElMessageBox} from "element-plus";
 
 const data = reactive({
   username: null,
@@ -48,8 +77,30 @@ const data = reactive({
   pageNum: 1,
   pageSize: 5,
   total: 0,
-  tableData: []
+  tableData: [],
+  formVisible:false,
+  form:{},
+  rules:{
+    username:[
+      {required :true ,message:'请填写账号',trigger:'blur'}
+    ],
+
+    name:[
+      {required :true ,message:'请填写名称',trigger:'blur'}
+    ],
+
+    phone:[
+      {required :true ,message:'请填写电话',trigger:'blur'}
+    ],
+
+    email:[
+      {required :true ,message:'请填写邮箱',trigger:'blur'}
+    ]
+  },
+  rows:[]
 })
+
+const formRef = ref()
 
 const load = () => {
   request.get('/admin/selectPage', {
@@ -76,5 +127,85 @@ const reset = () => {
   load()
 }
 
+const handleAdd = () => {
+  data.formVisible = true
+  data.form = {}
+}
+
+const add = () => {
+  formRef.value.validate((valid) => {
+    if (valid) {   // 验证通过的情况下
+      request.post('/admin/add', data.form).then(res => {
+        if (res.code === '200') {
+          data.formVisible = false
+          ElMessage.success('新增成功')
+          load()
+        } else {
+          ElMessage.error(res.msg)
+        }
+      })
+    }
+  })
+}
+const handleEdit = (row) => {
+  data.form = JSON.parse(JSON.stringify(row))  // 深度拷贝数据
+  data.formVisible = true
+}
+
+const update = () => {
+  // formRef 是表单的引用
+  formRef.value.validate((valid) => {
+    if (valid) {   // 验证通过的情况下
+      request.put('/admin/update', data.form).then(res => {
+        if (res.code === '200') {
+          data.formVisible = false
+          ElMessage.success('修改成功')
+          load()
+        } else {
+          ElMessage.error(res.msg)
+        }
+      })
+    }
+  })
+}
+
+const save = () => {
+  data.form.id ? update() : add()
+}
+
+
+const del = (id) => {
+  ElMessageBox.confirm('删除后无法恢复，您确认删除吗？', '删除确认', { type: 'warning' }).then(res => {
+    request.delete('/admin/delete/' + id).then(res => {
+      if (res.code === '200') {
+        ElMessage.success('删除成功')
+        load()
+      } else {
+        ElMessage.error(res.msg)
+      }
+    })
+  }).catch(err => {})
+}
+
+const handleSelectionChange = (rows) => {  // rows 就是实际选择的数组
+  data.rows=rows
+}
+
+const deleteBatch = () => {
+  if (data.rows.length === 0) {
+    ElMessage.warning('请选择数据')
+    return
+  }
+  ElMessageBox.confirm('删除后无法恢复，您确认删除吗？', '删除确认', { type: 'warning' }).then(res => {
+    request.delete('/admin/deleteBatch', { data: data.rows }).then(res => {
+      if (res.code === '200') {
+        ElMessage.success('批量删除成功')
+        load()
+      } else {
+        ElMessage.error(res.msg)
+      }
+    })
+  }).catch(err => {})
+}
 </script>
 

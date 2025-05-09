@@ -5,10 +5,7 @@ import com.example.entity.Admin;
 import com.example.service.AdminService;
 import com.github.pagehelper.PageInfo;
 import jakarta.annotation.Resource;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -17,6 +14,33 @@ import java.util.List;
 public class AdminController {
     @Resource
     AdminService adminService;
+
+    @PostMapping("/add")
+    public Result add(@RequestBody Admin admin) {
+        adminService.add(admin);
+        return Result.success();
+    }
+
+    @PutMapping("/update")
+    public Result update(@RequestBody Admin admin) {  // @RequestBody 接收前端传来的 json参数
+        adminService.update(admin);
+        return Result.success();
+    }
+
+
+    @DeleteMapping("/delete/{id}")
+    public Result delete(@PathVariable Integer id) {  // @PathVariable 接收前端传来的路径参数
+        adminService.deleteById(id);
+        return Result.success();
+    }
+
+    @DeleteMapping("/deleteBatch")
+    public Result deleteBatch(@RequestBody List<Admin> list) {  //  @RequestBody 接收前端传来的 json数组
+        adminService.deleteBatch(list);
+        return Result.success();
+    }
+
+
     @GetMapping("/selectAll")//http://9999/admin/selectAll
     public Result selectAll() {
         List<Admin> adminList =adminService.selectAll();
