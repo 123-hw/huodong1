@@ -6,19 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="df180f61-df55-4807-945d-5493ee2da8d0" name="更改" comment="5.33管理员功能及页面整理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/example/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/example/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/example/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/classes/com/example/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/com/example/service/AdminService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/classes/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_dropdown_style_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_dropdown_style_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_pagination_style_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_pagination_style_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_table_style_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_table_style_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/Admin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Admin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/com/example/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/com/example/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/com/example/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/com/example/mapper/AdminMapper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +140,7 @@
       <workItem from="1746526038453" duration="645000" />
       <workItem from="1746621780242" duration="1664000" />
       <workItem from="1746678811099" duration="10565000" />
-      <workItem from="1746767084946" duration="11285000" />
+      <workItem from="1746767084946" duration="13026000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <option name="closed" value="true" />
@@ -233,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746710534126</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="5.33管理员功能及页面整理">
+      <option name="closed" value="true" />
+      <created>1746778839393</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1746778839393</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
