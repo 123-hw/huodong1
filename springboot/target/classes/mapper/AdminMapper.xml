@@ -6,8 +6,15 @@
     <select id="selectAll" resultType="com.example.entity.Admin">
         select * from admin
         <where>
-            <if test="username != null">username like concat('%', #{username}, '%')</if>
-            <if test="name != null">and name like concat('%', #{name}, '%')</if>  <!-- 相当于 name like '%1%' -->
+            <if test="username != null and username!=''">username like concat('%', #{username}, '%')</if>
+            <if test="name != null and username!=''">and name like concat('%', #{name}, '%')</if>  <!-- 相当于 name like '%1%' -->
+            <if test="ids!=null and ids!=''">
+                and id in(1,2,3)
+                <foreach collection="idsArr" open="(" close=")" separator="," item="id">
+                    #{id}
+                </foreach>
+
+            </if>
         </where>
         order by id desc
     </select>

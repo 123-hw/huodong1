@@ -9,7 +9,16 @@
     <div class="card" style="margin-bottom: 5px">
       <el-button type="primary"@click="handleAdd">新 增</el-button>
       <el-button type="danger"@click="deleteBatch">批量删除</el-button>
-      <el-button type="success">批量导入</el-button>
+      <el-button type="success"@click="exportData">批量导入</el-button>
+      <el-upload
+          style="display: inline-block; margin-left: 10px"
+          action="http://localhost:9999/admin/import"
+          :show-file-list="false"
+          :on-success="handleImportSuccess"
+      >
+        <el-button type="success">批量导入</el-button>
+      </el-upload>
+
       <el-button type="info">批量导出</el-button>
     </div>
 
@@ -72,8 +81,8 @@ import request from "@/utils/request.js";
 import {ElMessage, ElMessageBox} from "element-plus";
 
 const data = reactive({
-  username: null,
-  name: null,
+  username: '',
+  name: '',
   pageNum: 1,
   pageSize: 5,
   total: 0,
@@ -97,7 +106,8 @@ const data = reactive({
       {required :true ,message:'请填写邮箱',trigger:'blur'}
     ]
   },
-  rows:[]
+  rows:[],
+  ids:[]
 })
 
 const formRef = ref()
@@ -122,8 +132,8 @@ const load = () => {
 load()
 
 const reset = () => {
-  data.username = null
-  data.name = null
+  data.username = ''
+  data.name = ''
   load()
 }
 
@@ -189,6 +199,7 @@ const del = (id) => {
 
 const handleSelectionChange = (rows) => {  // rows 就是实际选择的数组
   data.rows=rows
+  data.ids=data.rows.map(v=>v.id)//map可以把一个对象的数组转化成一个数字数组
 }
 
 const deleteBatch = () => {
@@ -206,6 +217,24 @@ const deleteBatch = () => {
       }
     })
   }).catch(err => {})
+}
+const exportData = () => {
+
+  let idsStr = data.ids.join(",")  // 把数组转换成  字符串  [1,2,3]  ->  "1,2,3"
+  let url = `http://localhost:9999/admin/export?username=${data.username === null ? '' : data.username}`
+      + `&name=${data.name === null ? '' : data.name}`
+      + `&ids=${idsStr}`
+  window.open(url)
+}
+
+
+const handleImportSuccess = (res) => {
+  if (res.code === '200') {
+    ElMessage.success('批量导入数据成功')
+    load()
+  } else {
+    ElMessage.error(res.msg)
+  }
 }
 </script>
 
