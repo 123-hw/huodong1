@@ -5,58 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df180f61-df55-4807-945d-5493ee2da8d0" name="更改" comment="5.33管理员功能及页面整理">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/example/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/example/entity/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/entity/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/example/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/classes/com/example/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/com/example/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springboot/target/classes/com/example/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/com/example/mapper/AdminMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/@element-plus_icons-vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/@element-plus_icons-vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/@element-plus_icons-vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/@element-plus_icons-vue.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/axios.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/axios.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/chunk-G3PMV62Z.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/chunk-G3PMV62Z.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/chunk-G3PMV62Z.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/chunk-G3PMV62Z.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_base_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_base_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_button_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_button_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_dropdown-item_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_dropdown-item_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_dropdown-menu_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_dropdown-menu_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_dropdown_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_dropdown_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_icon_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_icon_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_input_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_input_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_menu-item_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_menu-item_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_menu_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_menu_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_pagination_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_pagination_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_sub-menu_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_sub-menu_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_table-column_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_table-column_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_table_style_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus_es_components_table_style_index.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue-router.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue-router.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/vue.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/src/views/Admin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Admin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/mapper/AdminMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,12 +33,12 @@
     &quot;assignee&quot;: &quot;123-hw&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/123-hw/huodong1.git",
-    "accountId": "e76cd866-3c63-4743-96a3-ec4b456dc419"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/123-hw/huodong1.git&quot;,
+    &quot;accountId&quot;: &quot;e76cd866-3c63-4743-96a3-ec4b456dc419&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -95,38 +48,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript 调试.index.html.executor": "Run",
-    "Notification.DisplayName-DoNotAsk-Database detector": "数据库检测器",
-    "Notification.DoNotAsk-Database detector": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.SpringbootApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/小白做毕设/代码/code2025/vue/src/assets/imgs",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "D:\\heimeiyou\\IntelliJ IDEA 2024.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript 调试.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;数据库检测器&quot;,
+    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SpringbootApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/小白做毕设/代码/code2025/vue/src/assets/imgs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\heimeiyou\\IntelliJ IDEA 2024.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Options API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Options API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\小白做毕设\代码\code2025\vue\src\assets\imgs" />
@@ -190,7 +143,10 @@
       <workItem from="1746621780242" duration="1664000" />
       <workItem from="1746678811099" duration="10565000" />
       <workItem from="1746767084946" duration="11285000" />
-      <workItem from="1746780683007" duration="3891000" />
+      <workItem from="1746780683007" duration="4146000" />
+      <workItem from="1746790745226" duration="116000" />
+      <workItem from="1746858582536" duration="1141000" />
+      <workItem from="1746863707178" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <option name="closed" value="true" />
@@ -272,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746710534126</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="5.33管理员功能及页面整理">
+      <option name="closed" value="true" />
+      <created>1746784701985</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1746784701985</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
