@@ -9,7 +9,8 @@
     <div class="card" style="margin-bottom: 5px">
       <el-button type="primary"@click="handleAdd">新 增</el-button>
       <el-button type="danger"@click="deleteBatch">批量删除</el-button>
-      <el-button type="success"@click="exportData">批量导入</el-button>
+      <el-button type="success"@click="exportData">批量导出</el-button>
+
       <el-upload
           style="display: inline-block; margin-left: 10px"
           action="http://localhost:9999/admin/import"
@@ -19,7 +20,7 @@
         <el-button type="success">批量导入</el-button>
       </el-upload>
 
-      <el-button type="info">批量导出</el-button>
+
     </div>
 
     <div class="card" style="margin-bottom: 5px">
