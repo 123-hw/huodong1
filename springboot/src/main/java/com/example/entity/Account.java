@@ -3,7 +3,7 @@ package com.example.entity;
 /**
  * 管理员信息
  */
-public class Admin extends Account{
+public class Account {
     private Integer id;
     private String username;
     private String password;
@@ -11,8 +11,6 @@ public class Admin extends Account{
     private String phone;
     private String email;
     private String role;
-    private String ids;
-    private String[] idsArr;
 
     public String getRole(){
         return role;
@@ -71,20 +69,4 @@ public class Admin extends Account{
         this.email = email;
     }
 
-    public String getIds() {
-        return ids;
-    }
-
-    public void setIds(String ids) {
-        this.ids = ids;
-    }
-
-
-    public String[] getIdsArr() {
-        return idsArr;
-    }
-
-    public void setIdsArr(String[] idsArr) {
-        this.idsArr = idsArr;
-    }
 }

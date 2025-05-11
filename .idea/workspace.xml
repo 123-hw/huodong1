@@ -5,13 +5,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df180f61-df55-4807-945d-5493ee2da8d0" name="更改" comment="5.33管理员功能及页面整理">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/entity/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/assets/imgs/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/assets/imgs/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/Register.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/src/views/User.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/example/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/example/controller/webcontroller.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/controller/WebController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/example/entity/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/entity/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/java/com/example/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/java/com/example/service/AdminService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot/src/main/resources/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/src/main/resources/mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/com/example/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/com/example/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/com/example/controller/webcontroller.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/com/example/controller/webcontroller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/com/example/entity/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/com/example/entity/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot/target/classes/com/example/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/com/example/service/AdminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springboot/target/classes/mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot/target/classes/mapper/AdminMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/_metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/_metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/element-plus.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/chunk-KHR3CTJW.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/chunk-KHR3CTJW.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/chunk-KHR3CTJW.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/chunk-KHR3CTJW.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/chunk-YHV2IT7Q.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/chunk-YHV2IT7Q.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/node_modules/.vite/deps/chunk-YHV2IT7Q.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/vue/node_modules/.vite/deps/chunk-YHV2IT7Q.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue/src/views/Admin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/Admin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue/src/views/manager.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue/src/views/manager.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +63,15 @@
     &quot;assignee&quot;: &quot;123-hw&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/123-hw/huodong1.git&quot;,
-    &quot;accountId&quot;: &quot;e76cd866-3c63-4743-96a3-ec4b456dc419&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/123-hw/huodong1",
+    "accountId": "5fa1ffe4-43f2-4e01-a976-857cd708ddcd"
   }
-}</component>
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -50,44 +81,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JavaScript 调试.index.html.executor&quot;: &quot;Run&quot;,
-    &quot;Notification.DisplayName-DoNotAsk-Database detector&quot;: &quot;数据库检测器&quot;,
-    &quot;Notification.DoNotAsk-Database detector&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.SpringbootApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/小白做毕设/代码/code2025/vue/src/assets/imgs&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\heimeiyou\\IntelliJ IDEA 2024.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript 调试.index.html.executor": "Run",
+    "Notification.DisplayName-DoNotAsk-Database detector": "数据库检测器",
+    "Notification.DoNotAsk-Database detector": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.SpringbootApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/hzy/huodong4/springboot/src/main/resources/mapper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\idea\\IntelliJ IDEA 2024.2.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;vue.recent.templates&quot;: [
-      &quot;Vue Options API Component&quot;
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Options API Component"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hzy\huodong4\springboot\src\main\resources\mapper" />
+      <recent name="D:\hzy\huodong4\vue\src\views" />
+      <recent name="D:\hzy\huodong4\vue\src\assets\imgs" />
       <recent name="D:\小白做毕设\代码\code2025\vue\src\assets\imgs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\小白做毕设\代码\code2025\vue\src\assets\css" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.controller" />
+      <recent name="com.example.entity" />
+      <recent name="com.example.mapper" />
+      <recent name="com.example.service" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringbootApplication">
@@ -149,6 +189,7 @@
       <workItem from="1746790745226" duration="116000" />
       <workItem from="1746858582536" duration="1141000" />
       <workItem from="1746863707178" duration="1674000" />
+      <workItem from="1746955383122" duration="21793000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <option name="closed" value="true" />

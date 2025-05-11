@@ -13,7 +13,7 @@
 
       <el-upload
           style="display: inline-block; margin-left: 10px"
-          action="http://localhost:9999/admin/import"
+          action="http://localhost:9999/user/import"
           :show-file-list="false"
           :on-success="handleImportSuccess"
       >
@@ -50,7 +50,7 @@
           @size-change="load"
       />
     </div>
-    <el-dialog title="管理员信息" v-model="data.formVisible" width="30%" destroy-on-close>
+    <el-dialog title="普通用户信息" v-model="data.formVisible" width="30%" destroy-on-close>
       <el-form ref="formRef" :model="data.form":rules="data.rules" label-width="80px" style="padding: 20px 30px 10px 0">
         <el-form-item label="账号" prop="username">
           <el-input v-model="data.form.username" autocomplete="off" placeholder="请输入账号"/>
@@ -114,7 +114,7 @@ const data = reactive({
 const formRef = ref()
 
 const load = () => {
-  request.get('/Admin/selectPage', {
+  request.get('/User/selectPage', {
     params: {
       pageNum: data.pageNum,
       pageSize: data.pageSize,
@@ -146,7 +146,7 @@ const handleAdd = () => {
 const add = () => {
   formRef.value.validate((valid) => {
     if (valid) {   // 验证通过的情况下
-      request.post('/Admin/add', data.form).then(res => {
+      request.post('/User/add', data.form).then(res => {
         if (res.code === '200') {
           data.formVisible = false
           ElMessage.success('新增成功')
@@ -167,7 +167,7 @@ const update = () => {
   // formRef 是表单的引用
   formRef.value.validate((valid) => {
     if (valid) {   // 验证通过的情况下
-      request.put('/Admin/update', data.form).then(res => {
+      request.put('/User/update', data.form).then(res => {
         if (res.code === '200') {
           data.formVisible = false
           ElMessage.success('修改成功')
@@ -187,7 +187,7 @@ const save = () => {
 
 const del = (id) => {
   ElMessageBox.confirm('删除后无法恢复，您确认删除吗？', '删除确认', { type: 'warning' }).then(res => {
-    request.delete('/Admin/delete/' + id).then(res => {
+    request.delete('/User/delete/' + id).then(res => {
       if (res.code === '200') {
         ElMessage.success('删除成功')
         load()
@@ -209,7 +209,7 @@ const deleteBatch = () => {
     return
   }
   ElMessageBox.confirm('删除后无法恢复，您确认删除吗？', '删除确认', { type: 'warning' }).then(res => {
-    request.delete('/Admin/deleteBatch', { data: data.rows }).then(res => {
+    request.delete('/User/deleteBatch', { data: data.rows }).then(res => {
       if (res.code === '200') {
         ElMessage.success('批量删除成功')
         load()
@@ -222,7 +222,7 @@ const deleteBatch = () => {
 const exportData = () => {
 
   let idsStr = data.ids.join(",")  // 把数组转换成  字符串  [1,2,3]  ->  "1,2,3"
-  let url = `http://localhost:9999/admin/export?username=${data.username === null ? '' : data.username}`
+  let url = `http://localhost:9999/user/export?username=${data.username === null ? '' : data.username}`
       + `&name=${data.name === null ? '' : data.name}`
       + `&ids=${idsStr}`
   window.open(url)

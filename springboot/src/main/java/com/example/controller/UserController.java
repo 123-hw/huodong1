@@ -5,8 +5,8 @@ import cn.hutool.poi.excel.ExcelReader;
 import cn.hutool.poi.excel.ExcelUtil;
 import cn.hutool.poi.excel.ExcelWriter;
 import com.example.common.Result;
-import com.example.entity.Admin;
-import com.example.service.AdminService;
+import com.example.entity.User;
+import com.example.service.UserService;
 import com.github.pagehelper.PageInfo;
 import jakarta.annotation.Resource;
 import jakarta.servlet.ServletOutputStream;
@@ -20,41 +20,41 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Admin")
-public class AdminController {
+@RequestMapping("/User")
+public class UserController {
     @Resource
-    AdminService adminService;
+    UserService userService;
 
     @PostMapping("/add")
-    public Result add(@RequestBody Admin admin) {
-        adminService.add(admin);
+    public Result add(@RequestBody User user) {
+        userService.add(user);
         return Result.success();
     }
 
     @PutMapping("/update")
-    public Result update(@RequestBody Admin admin) {  // @RequestBody 接收前端传来的 json参数
-        adminService.update(admin);
+    public Result update(@RequestBody User user) {  // @RequestBody 接收前端传来的 json参数
+        userService.update(user);
         return Result.success();
     }
 
 
     @DeleteMapping("/delete/{id}")
     public Result delete(@PathVariable Integer id) {  // @PathVariable 接收前端传来的路径参数
-        adminService.deleteById(id);
+        userService.deleteById(id);
         return Result.success();
     }
 
     @DeleteMapping("/deleteBatch")
-    public Result deleteBatch(@RequestBody List<Admin> list) {  //  @RequestBody 接收前端传来的 json数组
-        adminService.deleteBatch(list);
+    public Result deleteBatch(@RequestBody List<User> list) {  //  @RequestBody 接收前端传来的 json数组
+        userService.deleteBatch(list);
         return Result.success();
     }
 
 
-    @GetMapping("/selectAll")//http://9999/admin/selectAll
-    public Result selectAll(Admin admin) {
-        List<Admin> adminList =adminService.selectAll(admin);
-        return Result.success(adminList);
+    @GetMapping("/selectAll")//http://9999/user/selectAll
+    public Result selectAll(User user) {
+        List<User> userList =userService.selectAll(user);
+        return Result.success(userList);
     }
 
     /**
@@ -67,22 +67,22 @@ public class AdminController {
     @GetMapping("/selectPage")
     public Result selectPage(@RequestParam(defaultValue = "1")  Integer pageNum,
                              @RequestParam(defaultValue = "10") Integer pageSize,
-                             Admin admin) {
-        PageInfo<Admin>pageInfo = adminService.selectPage(pageNum,pageSize,admin);
+                             User user) {
+        PageInfo<User>pageInfo = userService.selectPage(pageNum,pageSize,user);
         return Result.success(pageInfo);//返回的是分页的对象
     }
     /**
      * 数据导出
      */
     @GetMapping("/export")
-    public void exportData(Admin admin,HttpServletResponse response) throws Exception {
-        String ids = admin.getIds();
+    public void exportData(User user,HttpServletResponse response) throws Exception {
+        String ids = user.getIds();
         if (StrUtil.isNotBlank(ids)) {
             String[] idsArr = ids.split(",");
-            admin.setIdsArr(idsArr);
+            user.setIdsArr(idsArr);
         }
         // 1. 拿到所有数据
-        List<Admin> list = adminService.selectAll(admin);
+        List<User> list = userService.selectAll(user);
         // 2. 构建Writer对象
         ExcelWriter writer = ExcelUtil.getWriter(true);
         // 3. 设置中文表头
@@ -117,10 +117,10 @@ public class AdminController {
         reader.addHeaderAlias("名称", "name");
         reader.addHeaderAlias("电话", "phone");
         reader.addHeaderAlias("邮箱", "email");
-        List<Admin> list = reader.readAll(Admin.class);
+        List<User> list = reader.readAll(User.class);
         // 3. 将数据写到数据库
-        for (Admin admin : list) {
-            adminService.add(admin);
+        for (User user : list) {
+            userService.add(user);
         }
         return Result.success();
     }

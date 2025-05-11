@@ -8,8 +8,11 @@ const router = createRouter({
     {path: '/manager', name: 'home', component: () => import('../views/manager.vue') ,children:[
         {path: 'home',meta: {name:'主页'},component: ()=> import('../views/Home.vue'),},
         {path: 'Admin',meta: {name:'管理员信息'},component: ()=> import('../views/Admin.vue'),},
+            {path: 'User',meta: {name:'普通用户信息'},component: ()=> import('../views/User.vue'),},
       ]},
 
+      {path:'/login',component: import('../views/Login.vue'),},
+      {path:'/register',component: import('../views/Register.vue'),},
     {path:'/notFound',component: import('../views/404.vue'),},
     {path:'/:pathMatch(.*)',redirect:'/notFound'}
   ],

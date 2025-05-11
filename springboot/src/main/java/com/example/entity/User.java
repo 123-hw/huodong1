@@ -1,9 +1,9 @@
 package com.example.entity;
 
 /**
- * 管理员信息
+ * 用户信息
  */
-public class Admin extends Account{
+public class User extends Account{
     private Integer id;
     private String username;
     private String password;
@@ -11,6 +11,7 @@ public class Admin extends Account{
     private String phone;
     private String email;
     private String role;
+
     private String ids;
     private String[] idsArr;
 
@@ -21,7 +22,6 @@ public class Admin extends Account{
     public void setRole(String name) {
         this.role= role;
     }
-
 
     public String getName(){
         return name;
