@@ -14,6 +14,15 @@ public class Admin extends Account{
     private String ids;
     private String[] idsArr;
 
+    public String getRole(){
+        return role;
+    }
+
+    public void setRole(String name) {
+        this.role= role;
+    }
+
+
     public String getName(){
         return name;
     }

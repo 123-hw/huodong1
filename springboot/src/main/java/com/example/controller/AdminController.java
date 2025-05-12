@@ -20,7 +20,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 @RestController
-@RequestMapping("/admin")
+@RequestMapping("/Admin")
 public class AdminController {
     @Resource
     AdminService adminService;
