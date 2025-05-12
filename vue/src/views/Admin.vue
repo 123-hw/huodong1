@@ -53,16 +53,16 @@
     <el-dialog title="管理员信息" v-model="data.formVisible" width="30%" destroy-on-close>
       <el-form ref="formRef" :model="data.form":rules="data.rules" label-width="80px" style="padding: 20px 30px 10px 0">
         <el-form-item label="账号" prop="username">
-          <el-input v-model="data.form.username" autocomplete="off" />
+          <el-input v-model="data.form.username" autocomplete="off" placeholder="请输入账号"/>
         </el-form-item>
         <el-form-item label="名称" prop="name">
-          <el-input v-model="data.form.name" autocomplete="off" />
+          <el-input v-model="data.form.name" autocomplete="off" placeholder="请输入名称"/>
         </el-form-item>
         <el-form-item label="电话" prop="phone">
-          <el-input v-model="data.form.phone" autocomplete="off" />
+          <el-input v-model="data.form.phone" autocomplete="off" placeholder="请输入电话"/>
         </el-form-item>
         <el-form-item label="邮箱" prop="email">
-          <el-input v-model="data.form.email" autocomplete="off" />
+          <el-input v-model="data.form.email" autocomplete="off" placeholder="请输入邮箱"/>
         </el-form-item>
       </el-form>
       <template #footer>

@@ -3,13 +3,14 @@ package com.example.entity;
 /**
  * 管理员信息
  */
-public class Admin {
+public class Admin extends Account{
     private Integer id;
     private String username;
     private String password;
     private String name;
     private String phone;
     private String email;
+    private String role;
     private String ids;
     private String[] idsArr;
 
@@ -76,5 +77,13 @@ public class Admin {
 
     public void setIdsArr(String[] idsArr) {
         this.idsArr = idsArr;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
     }
 }
