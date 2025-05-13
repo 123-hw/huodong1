@@ -14,6 +14,17 @@ public class Admin extends Account{
     private String ids;
     private String[] idsArr;
     private String token;
+    private String avatar;
+
+    @Override
+    public String getAvatar() {
+        return avatar;
+    }
+
+    @Override
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
+    }
 
     @Override
     public String getToken() {
